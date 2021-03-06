@@ -13,4 +13,21 @@ public class Feather : MonoBehaviour
         rigidBody.velocity = transform.right * speed;
     }
 
+   
+    void Update()
+    {
+        void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.tag == "Wall")
+            {
+                Debug.Log("Hitting wall");
+                Destroy(gameObject);
+            }
+            else
+            {
+                Debug.Log("Not hitting wall");
+            }
+        }
+    }
+
 }
