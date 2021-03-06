@@ -1,19 +1,34 @@
 fileFormatVersion: 2
-guid: b14a013e9e966d444930a57b56cd856a
+guid: fde2ee5523df1c342b0c3530fb941768
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8868729072188591806
-    second: duck_0
+      213: 3348532550563196407
+    second: dungeon_0
   - first:
-      213: -8294748474342274760
-    second: duck_1
+      213: 7726447682282358601
+    second: dungeon_1
   - first:
-      213: 8781019514964437993
-    second: duck_2
+      213: 6742715835338597436
+    second: dungeon_2
   - first:
-      213: 7708609292541582763
-    second: duck_3
+      213: -7229037912106761437
+    second: dungeon_3
+  - first:
+      213: 278135595336851989
+    second: dungeon_4
+  - first:
+      213: 3416553326990366869
+    second: dungeon_5
+  - first:
+      213: 7406941843746067170
+    second: dungeon_6
+  - first:
+      213: -2242619169769190086
+    second: dungeon_7
+  - first:
+      213: -810218033150052672
+    second: dungeon_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -57,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -99,28 +114,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: duck_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebe0bf44a1e041b70800000000000000
-      internalID: 8868729072188591806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: duck_1
+      name: dungeon_0
       rect:
         serializedVersion: 2
         x: 0
@@ -134,14 +128,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8398d95c53223ec80800000000000000
-      internalID: -8294748474342274760
+      spriteID: 7fde62b0d90687e20800000000000000
+      internalID: 3348532550563196407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: duck_2
+      name: dungeon_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94784160b3bd93b60800000000000000
+      internalID: 7726447682282358601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3422cae350f29d50800000000000000
+      internalID: 6742715835338597436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon_3
       rect:
         serializedVersion: 2
         x: 0
@@ -155,14 +191,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9eb6a3b99b27cd970800000000000000
-      internalID: 8781019514964437993
+      spriteID: 3238b0de15c4dab90800000000000000
+      internalID: -7229037912106761437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: duck_3
+      name: dungeon_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512e17fa9d22cd300800000000000000
+      internalID: 278135595336851989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598907336290a6f20800000000000000
+      internalID: 3416553326990366869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon_6
       rect:
         serializedVersion: 2
         x: 0
@@ -176,8 +254,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bad57324f4b7afa60800000000000000
-      internalID: 7708609292541582763
+      spriteID: 2e2167cfc5ebac660800000000000000
+      internalID: 7406941843746067170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d0d6b3fbd90e0e0800000000000000
+      internalID: -2242619169769190086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6b977ddf681c4f0800000000000000
+      internalID: -810218033150052672
       vertices: []
       indices: 
       edges: []
