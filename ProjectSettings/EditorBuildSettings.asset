@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/up_entrance_1.unity
     guid: f923abbff14c60e42be109970926607d
+  - enabled: 1
+    path: Assets/Levels/all_entrance_1.unity
+    guid: d2720befef6d1dc46b6e13a9a21791d0
+  - enabled: 1
+    path: Assets/Levels/down_entrance_2.unity
+    guid: ea16541dc4f8e9f40921c8245e4bb2db
+  - enabled: 1
+    path: Assets/Levels/left_entrance_1.unity
+    guid: 5befadc922f746640803a08a94c4ccc8
+  - enabled: 1
+    path: Assets/Levels/right_entrance_1.unity
+    guid: 623b194dd5f53904294a4bde741995ad
   m_configObjects: {}
