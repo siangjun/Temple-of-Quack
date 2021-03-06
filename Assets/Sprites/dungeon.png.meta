@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: fde2ee5523df1c342b0c3530fb941768
 TextureImporter:
   internalIDToNameTable:
@@ -29,6 +30,11 @@ TextureImporter:
   - first:
       213: -810218033150052672
     second: dungeon_8
+=======
+guid: 08280ca86b4386e46a7b904d87790092
+TextureImporter:
+  internalIDToNameTable: []
+>>>>>>> bf32a01e91f98e5d5bc95e6a4c82f66e17ad179d
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,12 +73,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> bf32a01e91f98e5d5bc95e6a4c82f66e17ad179d
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 32
+=======
+  spritePixelsToUnits: 100
+>>>>>>> bf32a01e91f98e5d5bc95e6a4c82f66e17ad179d
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -98,6 +112,7 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -302,6 +317,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+=======
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+>>>>>>> bf32a01e91f98e5d5bc95e6a4c82f66e17ad179d
     outline: []
     physicsShape: []
     bones: []
