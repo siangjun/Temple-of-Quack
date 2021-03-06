@@ -216,8 +216,6 @@ GameObject:
   - component: {fileID: 1171333010}
   - component: {fileID: 1171333009}
   - component: {fileID: 1171333008}
-  - component: {fileID: 1171333012}
-  - component: {fileID: 1171333011}
   m_Layer: 0
   m_Name: ShootyGoose
   - component: {fileID: 997386143}
@@ -337,13 +335,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171333007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.22, y: 2.32, z: -8.594727}
+  m_LocalPosition: {x: 1.13, y: 0.361, z: -8.594727}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1455906545}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &1171333011
   m_GameObject: {fileID: 997386140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -435,6 +434,8 @@ MonoBehaviour:
   firePoint: {fileID: 1455906545}
   bulletPrefab: {fileID: 2528118438672716610, guid: eabd30fb47cd41f44ad156f012208eb5,
     type: 3}
+=======
+>>>>>>> parent of f8636ab (shootygoose shoots)
 --- !u!1 &1455906544
   m_GameObject: {fileID: 1216562775}
   m_Enabled: 1
