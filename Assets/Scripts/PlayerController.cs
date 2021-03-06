@@ -15,7 +15,8 @@ public class PlayerController : MonoBehaviour
 
     //sprite setup
     public SpriteRenderer spriteRenderer;
-    public Sprite[] duckSprites;
+
+    bool facingRight = true;
 
     // Start is called before the first frame update
     void Start()
@@ -31,21 +32,17 @@ public class PlayerController : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
 
-        //update sprite
+        //flip sprite if necessary
         if (horizontal < 0) {
-            spriteRenderer.sprite = duckSprites[1];
-            print("left");
+            if (facingRight) {
+                Flip();
+            }
         } 
         else if (horizontal > 0)
         {
-            spriteRenderer.sprite = duckSprites[0];
-            print("right");
-        }
-
-        //checks if player is attacking
-        if(Input.GetKeyDown("space")) 
-        {
-            Attack();
+            if (!facingRight) {
+                Flip();
+            }
         }
 
     }
@@ -63,13 +60,9 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    void Attack() 
-    {
-        print("attack!");
-    }
-
-    void ChangeSprite(Sprite newSprite) {
-        spriteRenderer.sprite = newSprite;
+    void Flip() {
+        facingRight = !facingRight;
+        transform.Rotate (0f, 180f, 0f);
     }
 
 }
