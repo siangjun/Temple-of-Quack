@@ -17,7 +17,7 @@ public class Weapon : MonoBehaviour
 
         var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        lookAngle = Mathf.Atan2(mousePosition.y + 2, mousePosition.x) * Mathf.Rad2Deg;
+        lookAngle = Mathf.Atan2(mousePosition.y - firePoint.position.y, mousePosition.x - firePoint.position.x) * Mathf.Rad2Deg;
 
 
         firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
