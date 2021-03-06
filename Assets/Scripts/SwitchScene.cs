@@ -11,7 +11,6 @@ public class SwitchScene : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Duck"))
         {
-            Debug.Log("its Colliding!");
             SceneManager.LoadScene(newLevel);
         }
     }
