@@ -322,3 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 10
+  spriteRenderer: {fileID: 871722005}
+  duckSprites:
+  - {fileID: 8868729072188591806, guid: b14a013e9e966d444930a57b56cd856a, type: 3}
+  - {fileID: -9006979739797513826, guid: 7348d7841ca45504d8f398d0a41781e0, type: 3}
