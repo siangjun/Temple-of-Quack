@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
 
-        //update sprite
+        //flip sprite if necessary
         if (horizontal < 0) {
             if (facingRight) {
                 Flip();
