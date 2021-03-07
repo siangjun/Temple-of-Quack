@@ -250,5 +250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93dbffe2874347b4d95a06c15511da28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  playerHealth: {fileID: 0}
+  healthBar: {fileID: 5008655393328001959}
+  playerHealth: 0
+  player: {fileID: 0}
