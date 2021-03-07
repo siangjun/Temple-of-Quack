@@ -13,9 +13,10 @@ public class EnemyGun : MonoBehaviour
     //Start
     void Start()
     {
+        float randomiserf = Random.Range(1.5f, 3.0f);
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         //attack every few seconds
-        InvokeRepeating("Attack", 2.0f, 1f);
+        InvokeRepeating("Attack", randomiserf, 1.5f);
     }
     
     // Update is called once per frame
@@ -30,7 +31,6 @@ public class EnemyGun : MonoBehaviour
 
     void Attack() 
     {
-        print("attack!");
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
     }
