@@ -6,9 +6,9 @@ public class Knife : MonoBehaviour
 {
     private Transform target;
     public float damage = 10f;
-    public float attackRange = 3f;
+    public float maxRange = 3f;
     public int cooldown = 20;
-    public bool canAttack = true;
+    public bool canAttack = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,15 +19,12 @@ public class Knife : MonoBehaviour
     void Update()
     {
         float distanceFromPlayer = Vector2.Distance(transform.position, target.position);
-        if(distanceFromPlayer < attackRange) 
+        if (distanceFromPlayer > maxRange)
         {
-            Attack();
+            canAttack = false;
         }
-    }
 
-    void Attack() 
-    {
-        if (canAttack && target.GetComponent<PlayerController>() != null)
+        if (canAttack)
         {
             PlayerController player = (PlayerController) target.GetComponent<PlayerController>();
             player.DamagePlayer(damage);
@@ -41,6 +38,12 @@ public class Knife : MonoBehaviour
                 cooldown = 20;
             }
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        print("collision");
+        canAttack = true;
     }
 
 }
