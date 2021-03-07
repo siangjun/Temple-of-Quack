@@ -38,6 +38,11 @@ public class PlayerController : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
 
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
+
         //flip sprite if necessary
         if (horizontal < 0) {
             if (facingRight) {
@@ -86,6 +91,7 @@ public class PlayerController : MonoBehaviour
     void DamagePlayer(float damage) 
     {
         health -= damage;
+        print("Health: "+health);
         HealthBar.SetHealth(health);
     }
 

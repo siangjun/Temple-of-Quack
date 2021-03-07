@@ -170,6 +170,7 @@ MonoBehaviour:
   firePoint: {fileID: 6698118077414862355}
   featherPrefab: {fileID: 793006627704360948, guid: 3869f38a50227394e91e8ae11359b9e9,
     type: 3}
+  attackSpeed: 0.2
 --- !u!61 &324926637078091157
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -196,4 +197,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
-  attackSpeed: 0.2
