@@ -11,8 +11,6 @@ public class EnemyAI : MonoBehaviour
     public float maxRange = 15f;
     public float minRange = 1f;
 
-    public float attackRange = 5f;
-
     //setup
     Rigidbody2D body;
 

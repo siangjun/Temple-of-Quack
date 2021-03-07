@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5226635689166923618}
   - component: {fileID: 5226635689166923619}
   - component: {fileID: -2098880715228536799}
+  - component: {fileID: -1412991243059686627}
   m_Layer: 10
   m_Name: MeleeGoose
   m_TagString: Untagged
@@ -124,7 +125,6 @@ MonoBehaviour:
   speed: 6
   maxRange: 15
   minRange: 1
-  attackRange: 5
   spriteRenderer: {fileID: 0}
 --- !u!61 &5226635689166923619
 BoxCollider2D:
@@ -187,3 +187,19 @@ PolygonCollider2D:
       - {x: 0.4375, y: 0.09375}
       - {x: 0.4375, y: 0.34375}
       - {x: 0.25, y: 0.5}
+--- !u!114 &-1412991243059686627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5226635689166923622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7009ceca9ad0a3442a617caa19ce8cec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  attackRange: 3
+  cooldown: 20
+  canAttack: 1

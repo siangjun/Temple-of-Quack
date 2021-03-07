@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void DamagePlayer(float damage) 
+    public void DamagePlayer(float damage) 
     {
         health -= damage;
         print("Health: "+health);
