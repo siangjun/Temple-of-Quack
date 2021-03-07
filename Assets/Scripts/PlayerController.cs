@@ -13,6 +13,11 @@ public class PlayerController : MonoBehaviour
 
     public float runSpeed = 10.0f;
 
+    public float health;
+    public float maxHealth = 100f;
+
+    public HealthBar HealthBar;
+
     //sprite setup
     public SpriteRenderer spriteRenderer;
 
@@ -23,6 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        health = maxHealth;
     }
 
     // Update is called once per frame
@@ -63,6 +69,24 @@ public class PlayerController : MonoBehaviour
     void Flip() {
         facingRight = !facingRight;
         transform.Rotate (0f, 180f, 0f);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        print("collision");
+        var collidedWith = collision.gameObject;
+        if (collidedWith.GetComponent<Bullet>() != null)
+        {
+            Bullet projectile = (Bullet) collidedWith.GetComponent<Bullet>();
+            DamagePlayer(projectile.damage);
+            print("hit");
+        }
+    }
+
+    void DamagePlayer(float damage) 
+    {
+        health -= damage;
+        HealthBar.SetHealth(health);
     }
 
 }

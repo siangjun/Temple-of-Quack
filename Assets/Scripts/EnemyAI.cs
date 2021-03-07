@@ -15,8 +15,6 @@ public class EnemyAI : MonoBehaviour
 
     //setup
     Rigidbody2D body;
-    float horizontal;
-    float vertical;
 
     private Transform target;
 
