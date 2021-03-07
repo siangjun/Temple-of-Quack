@@ -213,8 +213,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 324926637078091157, guid: 541e11220bd689d4080ff4b91035c747,
         type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 324926637078091157, guid: 541e11220bd689d4080ff4b91035c747,
+        type: 3}
       propertyPath: m_UsedByComposite
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698118077414862352, guid: 541e11220bd689d4080ff4b91035c747,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698118077414862355, guid: 541e11220bd689d4080ff4b91035c747,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.51
       objectReference: {fileID: 0}
     - target: {fileID: 6698118078231579457, guid: 541e11220bd689d4080ff4b91035c747,
         type: 3}
@@ -275,6 +290,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698118078231579485, guid: 541e11220bd689d4080ff4b91035c747,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6698118078231579487, guid: 541e11220bd689d4080ff4b91035c747,
         type: 3}
@@ -450,6 +470,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5226635689166923619, guid: 35cb48a624547f44d9904a6f9ba03ec0,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5226635689166923621, guid: 35cb48a624547f44d9904a6f9ba03ec0,
         type: 3}
       propertyPath: m_RootOrder
@@ -509,6 +534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MeleeGoose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226635689166923622, guid: 35cb48a624547f44d9904a6f9ba03ec0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5226635689166923622, guid: 35cb48a624547f44d9904a6f9ba03ec0,
         type: 3}
@@ -725,6 +755,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3633048587985646974, guid: dfa68f95b906ac949a47378315183190,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3633048588235846657, guid: dfa68f95b906ac949a47378315183190,
         type: 3}
       propertyPath: m_Name
@@ -732,8 +767,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3633048588235846657, guid: dfa68f95b906ac949a47378315183190,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633048588235846657, guid: dfa68f95b906ac949a47378315183190,
+        type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633048588235846683, guid: dfa68f95b906ac949a47378315183190,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3633048588235846684, guid: dfa68f95b906ac949a47378315183190,
         type: 3}
