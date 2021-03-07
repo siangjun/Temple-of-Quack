@@ -13,7 +13,7 @@ public class EnemyGun : MonoBehaviour
     //Start
     void Start()
     {
-        float randomiserf = Random.Range(1.5f, 3.0f);
+        float randomiserf = Random.Range(1.0f, 2.5f);
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         //attack every few seconds
         InvokeRepeating("Attack", randomiserf, 1.5f);
