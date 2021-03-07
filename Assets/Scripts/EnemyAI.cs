@@ -55,6 +55,10 @@ public class EnemyAI : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
+        if(distanceFromPlayer > maxRange) 
+        {
+            body.velocity = new Vector2(0,0);
+        }
     
     }
 }
