@@ -14,19 +14,12 @@ public class Feather : MonoBehaviour
     }
 
    
-    void Update()
+ 
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        void OnCollisionEnter2D(Collision2D collision)
+        if (collision.gameObject.CompareTag("Wall"))
         {
-            if (collision.gameObject.tag == "Wall")
-            {
-                Debug.Log("Hitting wall");
-                Destroy(gameObject);
-            }
-            else
-            {
-                Debug.Log("Not hitting wall");
-            }
+            Destroy(gameObject);
         }
     }
 
