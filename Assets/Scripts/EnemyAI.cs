@@ -17,13 +17,11 @@ public class EnemyAI : MonoBehaviour
     Rigidbody2D body;
     float horizontal;
     float vertical;
-    float moveLimiter = 0.7f;
 
     private Transform target;
 
     //sprite setup
     public SpriteRenderer spriteRenderer;
-    bool facingRight = true;
     
     // Start is called before the first frame update
     void Start()
@@ -35,7 +33,22 @@ public class EnemyAI : MonoBehaviour
 
     void Update() 
     {
+        if (health <= 0) 
+        {
+            Destroy(gameObject);
+        }
         DecideAction();
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        var collidedWith = collision.gameObject;
+        if (collidedWith.GetComponent<Feather>() != null)
+        {
+            Feather projectile = (Feather) collidedWith.GetComponent<Feather>();
+            health -= projectile.damage;
+            print("hit");
+        }
     }
 
 
