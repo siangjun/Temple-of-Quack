@@ -62,13 +62,14 @@ public class BossAI : MonoBehaviour
     void DecideAction()
     {
         float distanceFromPlayer = Vector2.Distance(transform.position, target.position);
-        if (distanceFromPlayer > minRange && distanceFromPlayer < maxRange && hasDied)
+        if (distanceFromPlayer > minRange && distanceFromPlayer < maxRange && !hasDied)
         {
-            speed = 12f;
-            damage = 30f;
-            maxRange = 12F;
+            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        else
+        {
+            Debug.Log("No boss rage yet, coming soon...");
+        }
 
 
     }
