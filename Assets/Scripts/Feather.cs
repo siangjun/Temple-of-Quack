@@ -5,6 +5,7 @@ using UnityEngine;
 public class Feather : MonoBehaviour
 {
     public float speed = 20f;
+    public float damage = 2f;
     public Rigidbody2D rigidBody;
     
     // Start is called before the first frame update
