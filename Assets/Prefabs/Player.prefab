@@ -166,3 +166,4 @@ MonoBehaviour:
   firePoint: {fileID: 6698118077414862355}
   featherPrefab: {fileID: 793006627704360948, guid: 3869f38a50227394e91e8ae11359b9e9,
     type: 3}
+  attackSpeed: 0.2
