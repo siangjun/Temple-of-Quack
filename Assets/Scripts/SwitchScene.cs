@@ -9,7 +9,7 @@ public class SwitchScene : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Duck"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene(newLevel);
         }
