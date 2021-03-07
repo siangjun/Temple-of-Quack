@@ -348,12 +348,12 @@ PrefabInstance:
     - target: {fileID: 7611921557065039396, guid: 5a759b931a6a9d549b8d09485252250c,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7611921557065039396, guid: 5a759b931a6a9d549b8d09485252250c,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7611921557065039396, guid: 5a759b931a6a9d549b8d09485252250c,
         type: 3}
@@ -393,12 +393,12 @@ PrefabInstance:
     - target: {fileID: 7611921557065039396, guid: 5a759b931a6a9d549b8d09485252250c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -438.09
+      value: 266
       objectReference: {fileID: 0}
     - target: {fileID: 7611921557065039396, guid: 5a759b931a6a9d549b8d09485252250c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -202.14
+      value: 176
       objectReference: {fileID: 0}
     - target: {fileID: 7611921557065039396, guid: 5a759b931a6a9d549b8d09485252250c,
         type: 3}
@@ -509,6 +509,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MeleeGoose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226635689166923622, guid: 35cb48a624547f44d9904a6f9ba03ec0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35cb48a624547f44d9904a6f9ba03ec0, type: 3}
@@ -645,8 +650,8 @@ Canvas:
   m_GameObject: {fileID: 1450052782}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 570908971}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -724,6 +729,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ShootyGoose
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633048588235846657, guid: dfa68f95b906ac949a47378315183190,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3633048588235846684, guid: dfa68f95b906ac949a47378315183190,
         type: 3}
