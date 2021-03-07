@@ -5,15 +5,11 @@ using UnityEngine;
 public class BossAI : MonoBehaviour
 {
     //define variables all enemies have
-    public float health = 200f;
-    public float damage = 25f;
+    public float health = 100f;
+    public float damage = 20f;
     public float speed = 8f;
     public float maxRange = 15f;
     public float minRange = 1f;
-
-    public float attackRange = 5f;
-
-    private bool hasDied = false;
 
     //setup
     Rigidbody2D body;
@@ -33,18 +29,11 @@ public class BossAI : MonoBehaviour
 
     void Update()
     {
-        if (health <= 0 && hasDied)
+        if (health <= 0)
         {
             Destroy(gameObject);
-
         }
-        else if (health <= 0 && !hasDied)
-        {
-            hasDied = true;
-            DecideAction();
-        }
-        
-
+        DecideAction();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -62,15 +51,14 @@ public class BossAI : MonoBehaviour
     void DecideAction()
     {
         float distanceFromPlayer = Vector2.Distance(transform.position, target.position);
-        if (distanceFromPlayer > minRange && distanceFromPlayer < maxRange && !hasDied)
+        if (distanceFromPlayer > minRange && distanceFromPlayer < maxRange)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
-        else
+        if (distanceFromPlayer > maxRange)
         {
-            Debug.Log("No boss rage yet, coming soon...");
+            body.velocity = new Vector2(0, 0);
         }
-
 
     }
 }
