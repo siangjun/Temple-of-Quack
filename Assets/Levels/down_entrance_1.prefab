@@ -200,6 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61922918951950445918a34250f628c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newLevel: 
 --- !u!50 &6744359585872333230
 Rigidbody2D:
   serializedVersion: 4
@@ -325,7 +326,7 @@ GameObject:
   - component: {fileID: 4507082463881335952}
   m_Layer: 0
   m_Name: Tilemap (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
