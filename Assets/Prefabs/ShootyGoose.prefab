@@ -171,7 +171,7 @@ MonoBehaviour:
   maxRange: 30
   minRange: 5
   attackRange: 20
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 3633048588235846687}
 --- !u!61 &3633048588235846683
 BoxCollider2D:
   m_ObjectHideFlags: 0
