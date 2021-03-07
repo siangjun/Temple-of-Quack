@@ -38,7 +38,7 @@ public class EnemyAI : MonoBehaviour
         DecideAction();
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         var collidedWith = collision.gameObject;
         if (collidedWith.GetComponent<Feather>() != null)

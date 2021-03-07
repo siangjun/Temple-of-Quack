@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
         transform.Rotate (0f, 180f, 0f);
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         print("collision");
         var collidedWith = collision.gameObject;
